@@ -21,7 +21,6 @@ end
 # Challenge 2
 until (text =~ dont_pattern).nil?
   starting_point = text =~ dont_pattern
-
   index = text[starting_point..-1] =~ do_pattern
   if index
     ending_point = starting_point + index
